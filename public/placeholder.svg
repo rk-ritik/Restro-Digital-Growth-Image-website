@@ -1,0 +1,53 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141a24" />
+      <stop offset="50%" stop-color="#1a2232" />
+      <stop offset="100%" stop-color="#0e131b" />
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#ff713f" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ff713f" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+  <rect width="800" height="600" fill="url(#grid)" />
+  <circle cx="400" cy="260" r="280" fill="url(#glowGrad)" />
+
+  <!-- Food Cloche / Plate Icon -->
+  <g transform="translate(400, 240)">
+    <!-- Plate base -->
+    <ellipse cx="0" cy="70" rx="140" ry="24" fill="#0f1520" stroke="rgba(255, 113, 63, 0.4)" stroke-width="3" />
+    <!-- Cloche dome -->
+    <path d="M -100 60 C -100 -20, 100 -20, 100 60 Z" fill="#1c2436" stroke="#ff713f" stroke-width="4" />
+    <!-- Cloche handle -->
+    <circle cx="0" cy="-30" r="14" fill="#ff713f" />
+    <path d="M 0 -16 L 0 -22" stroke="#ff713f" stroke-width="6" stroke-linecap="round" />
+    <!-- Steam lines -->
+    <path d="M -30 -50 C -40 -70, -20 -85, -30 -105" stroke="#ff713f" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 0 -55 C 10 -75, -10 -90, 0 -115" stroke="#ff713f" stroke-opacity="0.8" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M 30 -50 C 20 -70, 40 -85, 30 -105" stroke="#ff713f" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Typography -->
+  <text x="400" y="410" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="28" fill="#ffffff" letter-spacing="1">
+    FOOD ASSET PLACEHOLDER
+  </text>
+  <text x="400" y="445" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="500" font-size="16" fill="#94a3b8" letter-spacing="0.5">
+    Upload your custom dish photo or connect studio catalog
+  </text>
+
+  <!-- Badge -->
+  <g transform="translate(325, 480)">
+    <rect width="150" height="34" rx="17" fill="#1e2638" stroke="rgba(255, 113, 63, 0.5)" stroke-width="1.5" />
+    <circle cx="24" cy="17" r="5" fill="#ff713f" />
+    <text x="85" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="600" font-size="13" fill="#ff713f">
+      FOODIMAGER
+    </text>
+  </g>
+</svg>
