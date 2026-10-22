@@ -51,9 +51,8 @@ export default function Sidebar({ mobileOpen, setMobileOpen }) {
 
       {/* Main Sidebar */}
       <aside
-        className={`fixed top-0 bottom-0 left-0 z-40 w-72 bg-[#0e131d] border-r border-white/5 flex flex-col transition-transform duration-300 ease-in-out lg:translate-x-0 ${
-          mobileOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed top-0 bottom-0 left-0 z-40 w-72 bg-[#0e131d] border-r border-white/5 flex flex-col transition-transform duration-300 ease-in-out lg:translate-x-0 ${mobileOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
       >
         {/* Brand Header */}
         <div className="h-20 px-6 flex items-center justify-between border-b border-white/5 shrink-0">
@@ -103,10 +102,9 @@ export default function Sidebar({ mobileOpen, setMobileOpen }) {
                 to={item.path}
                 onClick={() => setMobileOpen(false)}
                 className={({ isActive }) =>
-                  `flex items-center justify-between px-3.5 py-2.5 rounded-xl font-medium text-sm transition-all duration-200 group ${
-                    isActive
-                      ? 'bg-gradient-to-r from-[#ff713f] to-[#ff561f] text-white font-semibold shadow-lg shadow-[#ff713f]/20'
-                      : 'text-slate-400 hover:text-white hover:bg-white/5'
+                  `flex items-center justify-between px-3.5 py-2.5 rounded-xl font-medium text-sm transition-all duration-200 group ${isActive
+                    ? 'bg-gradient-to-r from-[#ff713f] to-[#ff561f] text-white font-semibold shadow-lg shadow-[#ff713f]/20'
+                    : 'text-slate-400 hover:text-white hover:bg-white/5'
                   }`
                 }
               >
@@ -114,22 +112,20 @@ export default function Sidebar({ mobileOpen, setMobileOpen }) {
                   <>
                     <div className="flex items-center gap-3">
                       <Icon
-                        className={`w-4 h-4 transition-transform group-hover:scale-110 ${
-                          isActive ? 'text-white' : 'text-slate-400 group-hover:text-[#ff713f]'
-                        }`}
+                        className={`w-4 h-4 transition-transform group-hover:scale-110 ${isActive ? 'text-white' : 'text-slate-400 group-hover:text-[#ff713f]'
+                          }`}
                       />
                       <span>{item.name}</span>
                     </div>
 
                     {item.badge && (
                       <span
-                        className={`text-[10px] font-bold px-1.5 py-0.5 rounded-md ${
-                          isActive
+                        className={`text-[10px] font-bold px-1.5 py-0.5 rounded-md ${isActive
                             ? 'bg-white/20 text-white'
                             : item.badge === 'ZIP'
-                            ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
-                            : 'bg-[#ff713f]/20 text-[#ff713f] border border-[#ff713f]/30'
-                        }`}
+                              ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
+                              : 'bg-[#ff713f]/20 text-[#ff713f] border border-[#ff713f]/30'
+                          }`}
                       >
                         {item.badge}
                       </span>
