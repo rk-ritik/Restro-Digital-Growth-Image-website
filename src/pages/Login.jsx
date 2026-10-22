@@ -83,7 +83,7 @@ export default function Login() {
           {/* Logo & Header */}
           <div className="text-center space-y-3 mb-7">
             <div className="inline-flex p-1 rounded-2xl bg-gradient-to-br from-[#ff713f]/30 to-emerald-500/20 border border-white/15 shadow-xl shadow-[#ff713f]/10">
-              <div className="w-16 h-16 rounded-[14px] overflow-hidden bg-black/40 flex items-center justify-center p-0.5">
+              <div className="w-16 h-14 rounded-[14px] overflow-hidden bg-black/40 flex items-center justify-center p-0.5">
                 <img
                   src="/logo.jpeg"
                   alt="Restro Digital Growth"
